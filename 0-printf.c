@@ -32,7 +32,7 @@ int _printf(const char *format, ...)
 			else if (*format == 'c')
 			{
 				a = va_arg(var, int);
-				_putchar(c);
+				_putchar(a);
 				start = start + 1;
 			}
 			else if (*format == '%')
