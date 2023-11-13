@@ -8,6 +8,11 @@ _putchar(c);
 }
 int main(void)
 {
-	print_char('A');
+	va_list args;
+	va_start(args, 0);
+
+	print_char(args, 'A');
+	va_end(args);
+
 	return (0);
 }
