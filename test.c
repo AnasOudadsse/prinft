@@ -1,6 +1,13 @@
 #include "main.h"
 
+
+void print_char(va_list var)
+{
+char c = va_arg(var, int);
+_putchar(c);
+}
 int main(void)
 {
-void print_char(va_list var);
+	print_char('A');
+	return (0);
 }
