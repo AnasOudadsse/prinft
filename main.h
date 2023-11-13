@@ -14,17 +14,14 @@ int _printf(const char *format, ...);
 int _printf(const char *format, ...);
 /*_putchar.c */
 int _putchar(char c);
-/* printf_char */
+/* print_c.c */
 int printf_char(va_list val);
-<<<<<<< HEAD
-//printf_srting
-int prinft_string(va_list agr);
+//print_s.c
+int printf_string(va_list agr);
 //_strlen.c
 int _strlen(char *str);
 int _strlenc(const char *str);
-=======
-/*this one for printing string in 0-print_str.c*/
-int print_string(char *str);
+//print_%.c
+int printf_37(void):
 
->>>>>>> 940d9ed1561b9a93db05f1ae416da968cc0b3366
 #endif

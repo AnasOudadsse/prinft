@@ -6,7 +6,7 @@
  * Return: returns the lenght of the string
 */
 
-int prinft_string(va_list agr)
+int printf_string(va_list agr)
 {
 	char *string;
 	int i;
