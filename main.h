@@ -10,11 +10,13 @@ int _printf(const char *format, ...);
 #include <stdlib.h>
 #include <limits.h>
 
-/*_printf.c */
+/*0-printf.c */
 int _printf(const char *format, ...);
 /*_putchar.c */
 int _putchar(char c);
 /* printf_char */
 int printf_char(va_list val);
+/*this one for printing string in 0-print_str.c*/
+int print_string(char *str);
 
 #endif
