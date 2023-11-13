@@ -7,7 +7,7 @@
 int _printf(const char *format, ...)
 {
 	int start;
-	int va_list var;
+	va_list var;
 	char *str;
 	char a;
 
@@ -43,7 +43,7 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			_putchar(format);
+			_putchar(*format);
 			start = start + 1;
 		}
 		format = format + 1;

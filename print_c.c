@@ -7,11 +7,11 @@
  * Return : return 1
 */
 
-int printf_char(va_list val);
+int printf_char(va_list val)
 {
 	char string;
 
-	srting = va_arg(val, int);
+	string = va_arg(val, int);
 	_putchar(string);
 	return (1);
 }
