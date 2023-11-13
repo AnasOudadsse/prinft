@@ -28,5 +28,7 @@ int print_i(va_list args);
 int print_d(va_list args);
 //print_b.c
 int print_b(va_list val)
+//print_Hex.c
+int print_HEX(va_list val)
 
 #endif
