@@ -11,7 +11,8 @@ int main(void)
 	va_list args;
 	va_start(args, 0);
 
-	print_char(args, 'A');
+	print_char(args);
+
 	va_end(args);
 
 	return (0);
