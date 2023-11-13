@@ -10,7 +10,7 @@ int _printf(const char *format, ...);
 #include <stdlib.h>
 #include <limits.h>
 
-/*0-printf.c */
+//_printf.c
 int _printf(const char *format, ...);
 /*_putchar.c */
 int _putchar(char c);
