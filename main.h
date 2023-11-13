@@ -23,5 +23,8 @@ int _strlen(char *str);
 int _strlenc(const char *str);
 //print_%.c
 int printf_37(void):
+//print_int.c
+int print_i(va_list args);
+int print_d(va_list args);
 
 #endif
