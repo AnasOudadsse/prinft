@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
  * _putchar - function write char c
  * @c: the char
