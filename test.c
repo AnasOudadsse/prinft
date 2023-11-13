@@ -2,5 +2,5 @@
 
 int main(void)
 {
-int print_char('c');
+void print_char(va_list var);
 }
