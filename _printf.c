@@ -1,5 +1,4 @@
 /*#include "main.h"
-
  * _printf - printf input and specifiers
  * @format: input
  *
