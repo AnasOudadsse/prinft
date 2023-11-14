@@ -25,6 +25,8 @@ int (*handle_match(const char *match_char, int match_char_pos))(va_list)
 		{"u", print_uns},
 		{"x", print_HEX},
 		{"p", print_ptr},
+		{"r", print_str_rev},
+		{"R", print_13rot},
 		{NULL, NULL}
 	};
 
