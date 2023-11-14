@@ -1,41 +1,36 @@
 #include "main.h"
+
 /**
- * print_extra_Hex - prints an extra hexadecimal number
- * @n: number
- * Return: count
+ * print_HEX_extra - prints an hexgecimal number.
+ * @num: number to print.
+ * Return: counter.
  */
-int print_extra_Hex(unsigned int n)
+int print_HEX_extra(unsigned int num)
 {
 	int i;
-	int *tab;
-	int count = 0;
-	unsigned int num;
-	unsigned int tem;
-
-	num = va_arg(val, unsigned int);
-	tem = num;
+	int *array;
+	int counter = 0;
+	unsigned int tem = num;
 
 	while (num / 16 != 0)
 	{
 		num /= 16;
-		count = count + 1;
+		counter++;
 	}
-	count = count + 1;
-	tab = malloc(count * sizeof(int));
+	counter++;
+	array = malloc(counter * sizeof(int));
 
-	for (i = 0; i < count; i++)
+	for (i = 0; i < counter; i++)
 	{
-		tab[i] = tem % 16;
-		tem = tem / 16;
+		array[i] = tem % 16;
+		tem /= 16;
 	}
-	for (i = count - 1; i >= 0; i--)
+	for (i = counter - 1; i >= 0; i--)
 	{
-		if (tab[i] > 9)
-		{
-			tab[i] = tab[i] + 7;
-		}
-		_putchar(tab[i] + '0');
+		if (array[i] > 9)
+			array[i] = array[i] + 7;
+		_putchar(array[i] + '0');
 	}
-	free(tab);
-	return (count);
+	free(array);
+	return (counter);
 }

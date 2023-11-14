@@ -18,7 +18,7 @@ int _printf(const char *format, ...);
 
 typedef struct convert
 {
-	char *point;
+	const char *point;
 	int (*def)(va_list);
 } converter;
 
