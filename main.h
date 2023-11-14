@@ -56,7 +56,7 @@ int print_13rot(va_list rot);
 int print_str_rev(va_list rev);
 /*print_unsigned*/
 int print_uns(va_list uns);
-
+int print_ptr(va_list val);
 int (*handle_match(const char *match_char, int match_char_pos))(va_list);
 
 #endif

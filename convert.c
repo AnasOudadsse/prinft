@@ -24,6 +24,7 @@ int (*handle_match(const char *match_char, int match_char_pos))(va_list)
 		{"o", print_octal},
 		{"u", print_uns},
 		{"x", print_HEX},
+		{"p", print_ptr},
 		{NULL, NULL}
 	};
 
