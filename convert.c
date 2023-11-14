@@ -20,4 +20,8 @@ int (*handle_match(const char *match_char, int match_char_pos))(va_list)
 		{NULL, NULL}
 	};
 
-	for (i = 0; option[i]
+	for (i = 0; option[i].point != NULL; i++)
+		if (option[i].point[0] == match_char[match_char_pos])
+			return (option[i].def);
+	return (NULL);
+}
