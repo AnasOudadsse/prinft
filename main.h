@@ -30,5 +30,10 @@ int print_d(va_list args);
 int print_b(va_list val);
 /*print_Hex.c*/
 int print_HEX(va_list val);
+/*print_str_exc*/
+int print_str_exc(va_list val);
+/*print_extra_hex*/
+int print_extra_hex(unsigned long int n);
+
 
 #endif

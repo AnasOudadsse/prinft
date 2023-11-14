@@ -1,17 +1,19 @@
 #include "main.h"
-
 /**
- * print_HEX - prints an hexgecimal number.
- * @val: arguments.
- * Return: counter.
+ * print_extra_hex - prints an extra hexadecimal number
+ * @n: number
+ * Return: count
  */
-int print_HEX(va_list val)
+int print_extra_hex(unsigned long int n)
 {
 	int i;
 	int *tab;
 	int count = 0;
-	unsigned int num = va_arg(val, unsigned int);
-	unsigned int tem = num;
+	unsigned int num;
+	unsigned int tem;
+
+	num = va_arg(val, unsigned int);
+	tem = num;
 
 	while (num / 16 != 0)
 	{
@@ -29,7 +31,9 @@ int print_HEX(va_list val)
 	for (i = count - 1; i >= 0; i--)
 	{
 		if (tab[i] > 9)
+		{
 			tab[i] = tab[i] + 7;
+		}
 		_putchar(tab[i] + '0');
 	}
 	free(tab);
