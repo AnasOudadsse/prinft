@@ -4,7 +4,7 @@
  * @uns: argument
  * Return: the unsigned int
  */
-int print_uns(va_list uns);
+int print_uns(va_list uns)
 {
 	unsigned int v;
 	int num;
