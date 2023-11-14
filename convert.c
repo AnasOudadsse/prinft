@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * handle_match - search for match and execute the right function
  * @match_char: the character to match
@@ -8,25 +7,26 @@
  */
 int (*handle_match(const char *match_char, int match_char_pos))(va_list)
 {
-    int i;
+	int i;
 
-    typedef struct {
-        const char *point;
-        int (*def)(va_list);
-    } converter;
+	typedef struct {
+		const char *point;
+		int (*def)(va_list);
+	}
+	converter;
 
-    converter option[] = {
-        {"c", printf_char},
-        {"s", printf_string},
-        {"i", print_i},
-        {"d", print_d},
-        {"b", print_b},
-        {NULL, NULL}
-    };
+	converter option[] = {
+		{"c", printf_char},
+		{"s", printf_string},
+		{"i", print_i},
+		{"d", print_d},
+		{"b", print_b},
+		{NULL, NULL}
+	};
 
-    for (i = 0; option[i].point != NULL; i++)
-        if (option[i].point[0] == match_char[match_char_pos])
-            return option[i].def;
+	for (i = 0; option[i].point != NULL; i++)
+		if (option[i].point[0] == match_char[match_char_pos])
+			return (option[i].def);
 
-    return NULL;
+	return (NULL);
 }
