@@ -10,8 +10,11 @@ int print_HEX(va_list val)
 	int i;
 	int *tab;
 	int count = 0;
-	unsigned int num = va_arg(val, unsigned int);
-	unsigned int tem = num;
+	unsigned int num;
+	unsigned int tem;
+
+	num = va_arg(val, unsigned int);
+	tem = num;
 
 	while (num / 16 != 0)
 	{
