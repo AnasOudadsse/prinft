@@ -16,6 +16,7 @@ int print_uns(va_list uns)
 	v = va_arg(uns, unsigned int);
 	l = v % 10;
 	e = 1;
+	a = 1;
 
 
 	v = v / 10;
