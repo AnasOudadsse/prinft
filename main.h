@@ -18,7 +18,7 @@ int _printf(const char *format, ...);
 
 typedef struct convert
 {
-	char *point;
+	const char *point;
 	int (*def)(va_list);
 } converter;
 
@@ -52,9 +52,12 @@ int print_octal(va_list val);
 int print_small_hextra(unsigned long int n);
 /*print_13rot.c */
 int print_13rot(va_list rot);
+<<<<<<< HEAD
 /*print_reverse*/
 int print_str_rev(va_list rev);
 /*print_unsigned*/
 int print_uns(va_list uns);
+
+int (*handle_match(const char *match_char, int match_char_pos))(va_list);
 
 #endif
