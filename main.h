@@ -50,5 +50,6 @@ int print_extra_Hex(unsigned int n);
 int print_octal(va_list val);
 /*print_small_hex_extra.c*/
 int print_small_hextra(unsigned long int n);
-
+/*print_13rot.c */
+int print_13rot(va_list rot);
 #endif
