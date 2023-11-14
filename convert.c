@@ -22,6 +22,7 @@ int (*handle_match(const char *match_char, int match_char_pos))(va_list)
 		{"d", print_d},
 		{"b", print_b},
 		{"o", print_octal},
+		{"u", print_uns},
 		{NULL, NULL}
 	};
 
