@@ -33,7 +33,9 @@ int print_HEX(va_list val);
 /*print_str_exc*/
 int print_str_exc(va_list val);
 /*print_extra_hex*/
-int print_extra_hex(unsigned long int n);
+int print_extra_Hex(unsigned int n);
+/* print_octal */
+int print_octal(va_list val);
 
 
 #endif

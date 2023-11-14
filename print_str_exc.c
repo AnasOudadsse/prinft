@@ -33,7 +33,7 @@ int print_str_exc(va_list val)
 				_putchar('0');
 				len = len + 1;
 			}
-			len = len + print_extra_hex(num);
+			len = len + print_extra_Hex(num);
 		}
 		else
 		{

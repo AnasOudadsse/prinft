@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * print_extra_hex - prints an extra hexadecimal number
+ * print_extra_Hex - prints an extra hexadecimal number
  * @n: number
  * Return: count
  */
-int print_extra_hex(unsigned long int n)
+int print_extra_Hex(unsigned int n)
 {
 	int i;
 	int *tab;
