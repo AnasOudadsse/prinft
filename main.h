@@ -10,6 +10,18 @@ int _printf(const char *format, ...);
 #include <stdlib.h>
 #include <limits.h>
 
+/**
+ * struct convert - converts in printf
+ * @point: char pointer of the char after %
+ * def: function for the conversion
+*/
+
+typedef struct convert
+{
+	char *point;
+	int (*def)(va_list);
+} converter;
+
 /*_printf.c*/
 int _printf(const char *format, ...);
 /*_putchar.c */
@@ -36,6 +48,5 @@ int print_str_exc(va_list val);
 int print_extra_Hex(unsigned int n);
 /* print_octal */
 int print_octal(va_list val);
-
 
 #endif
