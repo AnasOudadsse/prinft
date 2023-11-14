@@ -13,7 +13,7 @@ int _printf(const char *format, ...);
 /**
  * struct convert - converts in printf
  * @point: char pointer of the char after %
- * def: function for the conversion
+ * @def : function for the conversion
 */
 
 typedef struct convert

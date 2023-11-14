@@ -7,36 +7,40 @@
  */
 int _printf(const char *format, ...)
 {
-	va_list args;
-	unsigned int i, len = 0;
+	va_list arguments;
+	unsigned int c, length = 0;
 
-	va_start(args, format);
+	va_start(arguments, format);
 
 	if (!format || (format[0] == '%' && !format[1]))
 		return (-1);
-	for (i = 0; format[i]; i++) /*runs along the string*/
+	for (c = 0; format[c]; c++)
 	{
-		if (format[i] == '%')
+		if (format[c] == '%')
 		{
-			if (format[i + 1] == '%')
+			if (format[c + 1] == '%')
 			{   _putchar('%');
-				i = i + 1;
-				len++;
+				c = c + 1;
+				length++;
 			}
-			else if (handle_match(format, i + 1) != NULL)
-			{   len += handle_match(format, i + 1)(args);
-				i = i + 1;
+			else if (handle_match(format, c + 1) != NULL)
+			{   length += handle_match(format, c + 1)(arguments);
+				c = c + 1;
 			}
 			else
-			{ _putchar(format[i]);
-				len++;
+			{ _putchar(format[c]);
+				length++;
 			}
 		}
 		else
-		{ _putchar(format[i]);
-			len++;
+		{ _putchar(format[c]);
+			length++;
 		}
 	}
-	va_end(args);
-	return (len);
+	va_end(arguments);
+	return (length);
+}
+int main(void)
+{
+return (0);
 }
