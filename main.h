@@ -52,7 +52,6 @@ int print_octal(va_list val);
 int print_small_hextra(unsigned long int n);
 /*print_13rot.c */
 int print_13rot(va_list rot);
-<<<<<<< HEAD
 /*print_reverse*/
 int print_str_rev(va_list rev);
 /*print_unsigned*/
