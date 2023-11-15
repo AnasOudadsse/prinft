@@ -58,5 +58,5 @@ int print_str_rev(va_list rev);
 int print_uns(va_list uns);
 int print_ptr(va_list val);
 int (*handle_match(const char *match_char, int match_char_pos))(va_list);
-
+int print_hex(va_list val);
 #endif

@@ -5,7 +5,7 @@
  * @val: arguments.
  * Return: counter.
  */
-int print_HEX(va_list val)
+int print_hex(va_list val)
 {
 	int i;
 	int *tab;
